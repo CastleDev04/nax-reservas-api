@@ -17,7 +17,6 @@ RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash - \
 
 RUN npm install
 RUN npm run build
-RUN php artisan migrate --force
 RUN php artisan config:cache
 RUN php artisan route:cache
 RUN php artisan view:cache
